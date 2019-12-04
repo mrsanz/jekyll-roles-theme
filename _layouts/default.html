@@ -1,1 +1,20 @@
-{{ content }}
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <section class="bg-dark shadow-sm">
+        <div class="container">
+          {% include navigation.html %}
+        </div>
+      </section>
+    <section class="py-5 bg-light">
+      <div class="container">
+      {{ content }}
+      </div>
+    </section>
+  </body>
+</html>
+
+  
