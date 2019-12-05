@@ -5,9 +5,9 @@
   </head>
   <body>
     <section class="bg-dark shadow-sm">
-        <div class="container">
-          {% include navigation.html %}
-        </div>
+      <div class="container">
+        {% include navigation.html %}
+      </div>
     </section>
     <section class="jumbotron bg-light">
       <div class="container">
@@ -17,7 +17,12 @@
         <p class="lead text-muted">
           {{ page.time }}
         </p>
-        {{ page.description }}            
+        {{ page.description }} 
+
+
+        {% capture role %}{% include _roles/scribe.md %}{% endcapture %}
+        {{ role | markdownify }}
+
       </div>
     </section>
     <section class="bg-white">
