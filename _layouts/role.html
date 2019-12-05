@@ -24,8 +24,8 @@
       <div class="container">
       {%capture roles %}default_roles/{{ page.title }}{% endcapture %}
       {% assign downcased_role = roles | downcase %}
-      {% include {{downcased_role}} %}
-      
+      {% include {{downcased_role}} | markdownify %}
+
       {{ content }}
       </div>
     </section>
