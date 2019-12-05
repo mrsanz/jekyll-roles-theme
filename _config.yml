@@ -3,6 +3,3 @@ collections:
     output: true
   extra:
     output: false
-include:
-  - .htaccess
-  - _roles
