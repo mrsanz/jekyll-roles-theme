@@ -1,5 +1,0 @@
-collections:
-  roles:
-    output: true
-  extra:
-    output: false

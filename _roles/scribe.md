@@ -11,7 +11,6 @@ description: The Scribe ensures that meeting notes are taken and shared.
 
 - [ ] Encourage everyone present to open up a shared document and type directly into it.
 - [ ] Watch your shared document closely to ensure that all sections are completely filled out.  Type in anything that is missed.
-{% include extra-tasks.md %}
 
 ***Within 24 Hours of Meeting***
 
@@ -30,7 +29,6 @@ This email should include (in order):
 
 * Make sure the notes are clear and to the point.  A regular attendee should be able to understand what happened by reading the notes alone.
 * Reserve your own time as close as possible to the end of the meeting, enabling you to clean up and send out the notes promptly. 
-{% include extra-tips.md %}
 
 {% include links.md %}
 
