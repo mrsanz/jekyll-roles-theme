@@ -1,12 +1,3 @@
-<section class="jumbotron bg-light">
-  <div class="container">
-    <h1 class="jumbotron-heading">
-      {{ page.title }}
-    </h1>
-    <p class="lead text-muted">Meeting Duration + 5m</p>
-    The Scribe ensures that meeting notes are taken and shared.
-  </div>
-
   ## Tasks
   
   ***During Meeting***
@@ -30,7 +21,4 @@
   ## Tips
   
   * Make sure the notes are clear and to the point.  A regular attendee should be able to understand what happened by reading the notes alone.
-  * Reserve your own time as close as possible to the end of the meeting, enabling you to clean up and send out the notes promptly. 
-
-  {{ page.content }}
-</section>
+  * Reserve your own time as close as possible to the end of the meeting, enabling you to clean up and send out the notes promptly.
