@@ -22,10 +22,9 @@
     </section>
     <section class="bg-white">
       <div class="container">
-      {%capture roles %}default_roles/{{ page.title }}{% endcapture %}
-      {% assign downcased_role = roles | downcase %}
-      {% include {{downcased_role}} | markdownify %}
-
+      {% capture role %}default_roles/{{ page.title }}{% endcapture %}
+      {% capture role_docs%}{% include {{ role | downcase }} %}{% endcapture %}
+      {{ role_docs | markdownify }}
       {{ content }}
       </div>
     </section>
