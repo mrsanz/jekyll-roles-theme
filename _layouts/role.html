@@ -26,6 +26,7 @@
       {% capture role_docs%}{% include {{ role | downcase }} %}{% endcapture %}
       {{ role_docs | markdownify }}      
       {{ content }}
+      {% include links.md %}
       </div>
     </section>
   </body>
