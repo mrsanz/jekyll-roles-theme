@@ -39,22 +39,20 @@
         <h3 class="title">Roles</h3>
         <div class="row">
           {% for role in site.roles %}
-          {% unless site.data.config.excludes contains role.title %}
           <div class="col-sm-4">
-              <div class="card my-2 btn btn-light">
-                <div class="card-body text-left">
-                  <p class="card-title">
-                    <a class="stretched-link" href="{{ role.url }}">{{ role.title }}</a><br/>
-                    <small class="text-muted">Time: {{ role.time }}</small>
-                  </p>
-                  <p>
-                    {{ role.description }}
-                  </p>
-                </div>
+            <div class="card my-2 btn btn-light">
+              <div class="card-body text-left">
+                <p class="card-title">
+                  <a class="stretched-link" href="{{ role.url }}">{{ role.title }}</a><br/>
+                  <small class="text-muted">Time: {{ role.time }}</small>
+                </p>
+                <p>
+                  {{ role.description }}
+                </p>
+              </div>
             </div>
           </div>
-          {% endunless %}
-        {% endfor %}
+          {% endfor %}
         </div>
       </div>
     </section>
