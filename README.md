@@ -1,52 +1,46 @@
 # jekyll-roles-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Welcome to the Community Roles Jekyll theme.  This theme is designed to host and share community group process and roles as a set of GitHub Pages.   
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
-TODO: Delete this and the text above, and describe your gem
+## Notable Features
 
+* Pre-defined Roles. Create an empty page in your site with the same name as the role and it will be pre-populated with the corresponding [role templates](_includes/default_roles).
+* Pre-defined meta templates content in [`/roles`](/roles)
+* Landing page to easily display information about your community and view all of the roles that your community uses.
 
 ## Installation
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-roles-theme"
-```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-roles-theme
+remote_theme: mrsanz/jekyll-roles-theme
 ```
 
-And then execute:
+Configure any relevant `_config.yaml` settings.  The full set of options are below
 
-    $ bundle
+```yaml
+# links will show up as reference links on each page, new and included roles
+links:
+  chat: http://slack.com/
+```
 
-Or install it yourself as:
+Copy over any role templates [`/roles`](/roles) you wish to adopt.  Add any new roles you wish with the following front matter
 
-    $ gem install jekyll-roles-theme
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+```yaml
+---
+layout: role
+title: <title>
+time: <duration in minutes, hours>
+description: <short description>
+---
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-roles-theme.gemspec` accordingly.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mrsanz/jekyll-roles-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [ISC License](https://opensource.org/licenses/ISC).
 

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <section class="bg-dark shadow-sm">
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+    </section>
+    <section class="jumbotron bg-white">
+      <div class="container">
+        <h1 class="jumbotron-heading">
+          {% include title.html %}
+        </h1>
+        <p class="lead text-muted">
+          Process and roles documenation.
+        </p>
+        {% for files in site.static_files %}
+        {% if files.path == '/overview.md' %}
+        {% capture overview %}{% include_relative overview.md %}{% endcapture %}
+          <br/>
+          {{ overview | markdownify }}
+          {% endif %}
+      {% endfor %}
+      </div>
+
+    </section>
+
+    <section class="section bg-light py-5">
+      <div class="container">
+        {{ content }}
+      </div>
+    </section>
+
+    <section class="section py-5">
+      <div class="container">
+        <h3 class="title">Roles</h3>
+        <div class="row">
+          {% for role in site.roles %}
+          <div class="col-sm-4">
+            <div class="card my-2 btn btn-light">
+              <div class="card-body text-left">
+                <p class="card-title">
+                  <a class="stretched-link" href="{{ role.url }}">{{ role.title }}</a><br/>
+                  <small class="text-muted">Time: {{ role.time }}</small>
+                </p>
+                <p>
+                  {{ role.description }}
+                </p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+

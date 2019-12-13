@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <section class="bg-dark shadow-sm">
+        <div class="container">
+          {% include navigation.html %}
+        </div>
+    </section>
+    <section class="jumbotron bg-light">
+      <div class="container">
+        <h1 class="jumbotron-heading">
+          {{ page.title }}
+        </h1>
+        <p class="lead text-muted">
+          {{ page.time }}
+        </p>
+        {{ page.description }}            
+      </div>
+    </section>
+    <section class="bg-white">
+      <div class="container">
+      {% capture role %}default_roles/{{ page.title }}{% endcapture %}
+      {% capture role_docs%}{% include {{ role | downcase }} %}{% endcapture %}
+      {{ role_docs | markdownify }}      
+      {{ content }}
+      </div>
+    </section>
+  </body>
+</html>
+
+  

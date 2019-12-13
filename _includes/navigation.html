@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark w-100" >
+  <a href="{{ site.url }}" class="navbar-brand nav-item text-light">{% include title.html %}</a>
+  <div class="nav">
+    {% for role in site.roles %}
+    {% unless site.data.config.excludes contains role.title %}
+    <a class="nav-item nav-link text-light{% if page.title == role.title %} text-muted{% endif %}" href="{{ role.url | relative_url }}">{{role.title}}</a>
+    {% endunless %}
+    {% endfor %}
+    {% if site.reference != nil and site.referenceName != nil %}
+    <a href="{{site.reference}}" class="btn btn-outline-light nav-item nav-link" target="_blank">{{site.referenceName"}}</a>
+    {% endif %}
+  </div>
+</nav>

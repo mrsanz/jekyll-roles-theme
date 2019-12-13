@@ -6,13 +6,13 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Loren Sanz"]
   spec.email         = ["loren.sanz@nike.com"]
 
-  spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.summary       = "%q{Generic Community Roles Template Theme.}"
+  spec.homepage      = "https://github.com/mrsanz/jekyll-roles-theme"
+  spec.license       = "ISC"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 4.0"
+  spec.add_runtime_dependency "jekyll", ">= 3.6", "< 5.0"
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
