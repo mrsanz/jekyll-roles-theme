@@ -2,7 +2,7 @@
 
 {% if site.reference != nil %}
 ### To create a new shared document
-{% capture type %}scheduler-{{site.reference}}.md{% endcapture %}
+{% capture type %}default_roles/scheduler-{{site.reference}}.md{% endcapture %}
 - {% include {{ type }} %}
 {% endif %}
 
