@@ -22,7 +22,12 @@ Configure any relevant `_config.yaml` settings.  The full set of options are bel
 ```yaml
 # links will show up as reference links on each page, new and included roles
 links:
-  chat: http://slack.com/
+  chat: https://slack.com/
+  folder: https://drive.google.com/drive/folders/
+  calendar: https://calendar.google.com/calendar?hash
+
+# reference: outlook
+reference: google
 ```
 
 Copy over any role templates [`/roles`](/roles) you wish to adopt.  Add any new roles you wish with the following front matter
