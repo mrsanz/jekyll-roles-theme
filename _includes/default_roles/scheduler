@@ -1,8 +1,10 @@
 ## Tasks
 
+{% if site.reference %}
 ### To create a new shared document
 {% capture type %}scheduler-{{site.reference}}.md{% endcapture %}
 - {% include {{ type }} %}
+{% endif %}
 
 ### Within 24 Hours of Meeting
 
