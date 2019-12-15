@@ -1,12 +1,6 @@
 ## Tasks
 
-{% if site.reference != nil %}
-### To create a new shared document
-{% capture type %}default_roles/scheduler-{{site.reference}}.md{% endcapture %}
-- {% include {{ type }} %}
-{% endif %}
-
-### Within 24 Hours of Meeting
+***Within 24 Hours of Meeting***
 
  - [ ] Update the [shared calendar][calendar] series by extending it and and inviting any new attendees.
  - [ ] Visit the learning [shared document folder][folder].
@@ -18,10 +12,18 @@
   - Write-enabled link to the agenda document.
   - Copy/pasted role assignments and agenda detail.
 
-## Tips
+
+***Tips***
 * Create a short todo list of instructions in the agenda template.  
 This can be used to collect information into a single place for review during the meeting, 
 or linking to metrics in a spreadsheet.
 * Put the most important task to complete first in the agenda.
+
+{% if site.reference != nil %}
+***To create a new shared document***
+{% capture type %}default_roles/scheduler-{{site.reference}}.md{% endcapture %}
+- {% include {{ type }} %}
+{% endif %}
+
 
 {% include links.md %}
