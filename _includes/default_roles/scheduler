@@ -22,7 +22,7 @@ or linking to metrics in a spreadsheet.
 {% if site.reference != nil %}
 ***To create a new shared document***
 {% capture type %}default_roles/scheduler-{{site.reference}}.md{% endcapture %}
-- {% include {{ type }} %}
+{% include {{ type }} %}
 {% endif %}
 
 
