@@ -1,6 +1,6 @@
 ## Tasks
 
-{% if site.reference !== nil %}
+{% if site.reference != nil %}
 ### To create a new shared document
 {% capture type %}scheduler-{{site.reference}}.md{% endcapture %}
 - {% include {{ type }} %}
