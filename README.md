@@ -14,15 +14,25 @@ Welcome to the Community Roles Jekyll theme.  This theme is designed to host and
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
+# _config.yaml
 remote_theme: mrsanz/jekyll-roles-theme
 ```
 
 Configure any relevant `_config.yaml` settings.  The full set of options are below
 
 ```yaml
+# _config.yaml
 # links will show up as reference links on each page, new and included roles
 links:
-  chat: http://slack.com/
+  chat: https://slack.com/
+  folder: https://drive.google.com/drive/folders/
+  calendar: https://calendar.google.com/calendar?hash
+```
+
+The reference key is required for the `scheduler` role. Valid options are: `google`, `onedrive`
+``` yaml
+# _config.yaml
+reference: google
 ```
 
 Copy over any role templates [`/roles`](/roles) you wish to adopt.  Add any new roles you wish with the following front matter
