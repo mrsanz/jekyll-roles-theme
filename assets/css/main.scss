@@ -1,4 +1,12 @@
 ---
 ---
-@charset "utf-8";
-@import "main";
+
+.task-list {
+  list-style: none;
+  list-style-position: inside;
+  padding-inline-start: .75rem;
+}
+
+.task-list-item-checkbox {
+  margin-right: .75rem;
+}
