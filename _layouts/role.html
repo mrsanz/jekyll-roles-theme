@@ -36,7 +36,7 @@
       {{ content }}
 
       {% capture links %}{% include links.md %}{% endcapture %}
-      {{ links | | markdownify }}
+      {{ links | markdownify }}
       </div>
     </section>
   </body>
