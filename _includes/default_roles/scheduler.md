@@ -24,6 +24,3 @@ or linking to metrics in a spreadsheet.
 {% capture type %}default_roles/scheduler-{{site.reference}}.md{% endcapture %}
 {% include {{ type }} %}
 {% endif %}
-
-
-{% include links.md %}
