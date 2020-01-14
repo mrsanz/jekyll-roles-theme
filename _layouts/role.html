@@ -9,6 +9,7 @@
           {% include navigation.html %}
         </div>
     </section>
+
     <section class="jumbotron bg-light">
       <div class="container">
         <h1 class="jumbotron-heading">
@@ -32,11 +33,8 @@
       {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
       {{ role_docs | markdownify }}
       {% endif %}
-      
       {{ content }}
 
-      {% capture links %}{% include links.md %}{% endcapture %}
-      {{ links | markdownify }}
       </div>
     </section>
   </body>
