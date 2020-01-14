@@ -20,10 +20,13 @@ description: Role short description here
 
 * e.g. To setup links on a page follow these [instructions]
 
-Then Add links to the _config.yaml page 
+Then add links to the _config.yaml page 
 
 ``` yaml
 # in your _config.yml
 links: 
   instructions: http://www.google.com
 ```
+
+<!--  include this link below to add all of the globally configured links  -->
+{% include links.md %}
