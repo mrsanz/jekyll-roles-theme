@@ -25,7 +25,6 @@
           {% endif %}
       {% endfor %}
       </div>
-
     </section>
 
     <section class="section bg-light py-5">
@@ -38,20 +37,27 @@
       <div class="container">
         <h3 class="title">Roles</h3>
         <div class="row">
-          {% for role in site.roles %}
+          {% for p in site.pages %}
+          {% if p.layout == "role" %}
+          
+          {% assign time = p.time %}
+          {% assign description = p.description %}
+
           <div class="col-sm-4">
             <div class="card my-2 btn btn-light">
               <div class="card-body text-left">
                 <p class="card-title">
-                  <a class="stretched-link" href="{{ role.url }}">{{ role.title }}</a><br/>
-                  <small class="text-muted">Time: {{ role.time }}</small>
+                  <a class="stretched-link" href="{{ p.url }}">{{ p.title }}</a><br/>
+                  
+                  <small class="text-muted">Time: {{ time }}</small>
                 </p>
                 <p>
-                  {{ role.description }}
+                  {{ description }}
                 </p>
               </div>
             </div>
           </div>
+          {% endif %}
           {% endfor %}
         </div>
       </div>

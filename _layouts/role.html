@@ -22,9 +22,19 @@
     </section>
     <section class="bg-white">
       <div class="container">
-      {% capture role %}default_roles/{{ page.title }}{% endcapture %}
-      {% capture role_docs%}{% include {{ role | downcase }} %}{% endcapture %}
+      {% assign title = page.title | downcase %}
+      {% if title == 'scheduler' %}
+        {% capture role_docs%}{% include default_roles/scheduler.md %}{% endcapture %}
+        {{ role_docs | markdownify }}
+      {% endif %}
+
+      {% if title == 'scribe' %}
+      {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
+        {{ role_docs | markdownify }}
       {{ role_docs | markdownify }}      
+        {{ role_docs | markdownify }}
+      {% endif %}
+
       {{ content }}
       </div>
     </section>
