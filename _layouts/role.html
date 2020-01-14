@@ -30,11 +30,9 @@
 
       {% if title == 'scribe' %}
       {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
-        {{ role_docs | markdownify }}
-      {{ role_docs | markdownify }}      
-        {{ role_docs | markdownify }}
+      {{ role_docs | markdownify }}
       {% endif %}
-
+      
       {{ content }}
       </div>
     </section>
