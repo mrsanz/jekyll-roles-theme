@@ -56,7 +56,7 @@ The following reference key is required for the `scheduler` role. Valid options 
 ``` yaml
 # _config.yaml
 reference: google
-# refernece: onedrive
+# reference: onedrive
 ```
 
 ## Contributing
