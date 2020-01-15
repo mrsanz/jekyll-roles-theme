@@ -47,7 +47,7 @@
             <div class="card my-2 btn btn-light">
               <div class="card-body text-left">
                 <p class="card-title">
-                  <a class="stretched-link" href="{{ p.url }}">{{ p.title }}</a><br/>
+                  <a class="stretched-link" href="{{ p.url | relative_url }}">{{ p.title }}</a><br/>
                   
                   <small class="text-muted">Time: {{ time }}</small>
                 </p>
