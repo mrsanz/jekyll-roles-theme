@@ -11,7 +11,7 @@ Welcome to the Community Roles jekyll-theme.  This theme is designed to host and
 
 ## Installation
 
-And add this line to your Jekyll site's `_config.yml`:
+replace the `theme` with this line in your Jekyll site's `_config.yml`:
 
 ```yaml
 remote_theme: mrsanz/jekyll-roles-theme
