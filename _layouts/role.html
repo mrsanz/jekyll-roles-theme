@@ -23,6 +23,7 @@
     </section>
     <section class="bg-white">
       <div class="container">
+      {% unless page.overwrite == true %}
       {% assign title = page.title | downcase %}
       {% if title == 'facilitator' %}
         {% capture role_docs%}{% include default_roles/facilitator.md %}{% endcapture %}
@@ -36,6 +37,7 @@
       {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
       {{ role_docs | markdownify }}
       {% endif %}
+      {% endunless %}
       {{ content }}
       </div>
     </section>
