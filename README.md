@@ -39,7 +39,7 @@ Join our organizers slack channel [#community-slack-organizers][organizers]
 ```
 
 ## Add your roles
-Copy over any role templates [`/roles`](/roles) you wish to adopt.  Add any new roles you wish with the following front matter.  Use the [roles/generic_template](roles/generic_template.md) as a template for new roles.
+Copy over any role templates [`/roles`](/roles) you wish to adopt.  Add any new roles you wish with the following front matter.  Use the [`roles/generic_template.md`](roles/generic_template.md) as a template for new roles.
 
 ```yaml
 ---
