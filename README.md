@@ -51,7 +51,7 @@ description: <short description>
 ---
 ```
 
-***Overwrite default content***
+***overwrite default content***
 
 To fully customize a role add the following `front-matter` to your role.
 ```md
