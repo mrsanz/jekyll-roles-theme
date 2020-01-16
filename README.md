@@ -40,9 +40,9 @@ Setup links to relevant documentation in your `_config.yaml`.  These links are t
 # links will show up as reference links on each role page
 links:
   # Chat is a link to the main chat room for your community
-  chat: https://slack.com/
+  chat: https://slack.com/<link-to-channel>
   # Organizers is a link to a chat room for anyone that wants to help organize a community. (optional)
-  organizers: https://slack.com/
+  organizers: https://slack.com/<link-to-organizers-channel>
   # Folder is where any agendas or notes lives, typically these live on Google Drive or Microsoft OneDrive, but they could be a GitHub wiki.
   folder: https://drive.google.com/drive/folders/
   # Calendar is a link to a shared calendar showing upcoming invitations.
@@ -66,6 +66,8 @@ layout: home
 Join our community slack channel [#community-slack][chat]
 
 Join our organizers slack channel [#community-slack-organizers][organizers]
+
+Check out our documentation [folder]
 {% include links.md %}
 ```
 
