@@ -98,9 +98,9 @@ reference: google
 ```
 
 - Facilitator Role
-  Some groups will review a backlog as a part of their facilitator's agenda.  Include backlog specific instructions with the following option.
+  Some groups will review a backlog as a part of their facilitator's agenda.  Include project_board specific instructions with the following option.
 ```yaml
-backlog: true
+project_board: true
 ``` 
 
 ***Overwrite default role content***
