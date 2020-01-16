@@ -7,10 +7,11 @@ Welcome to the Community Roles jekyll-theme.  This theme is designed to host and
 * Pre-defined Roles. Create an empty page in your site with the same name as the role and it will be pre-populated with the corresponding [role templates](_includes/default_roles).
 * Pre-defined template content in [`/roles`](/roles)
 * Landing page to easily display information about your community and view all of the roles that your community uses.
+* You can overwrite default roles with the overwrite front-matter flag.
 
 ## Installation
 
-And add this line to your Jekyll site's `_config.yml`:
+replace the `theme` with this line in your Jekyll site's `_config.yml`:
 
 ```yaml
 remote_theme: mrsanz/jekyll-roles-theme
@@ -48,6 +49,19 @@ title: <title>
 time: <duration in minutes, hours>
 description: <short description>
 ---
+```
+
+***overwrite default content***
+
+To fully customize a role add the following `front-matter` to your role.
+```md
+# role/facilitator.md
+overwrite: true
+```
+
+This will allow your markdown in that page to fully overwrite any role default content.  By removing the default content it also removes the default include of links so add this to the bottom of your overwritten role to ensure global links still work.
+```md
+{% include links.md %}
 ```
 
 ***Custom config for the Scheduler Role***
