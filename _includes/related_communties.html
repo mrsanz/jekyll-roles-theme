@@ -1,0 +1,10 @@
+{% if site.related_communities != nil %}
+  {% for community in site.related_communities %}
+  {% assign community_link = community | split: ", " %}
+  {% unless community_link[1] == nil %}
+  <li class="nav-item">
+    <a href="{{ community_link[1] }}" class="nav-item nav-link text-light active">{{ community_link[0] }}</a>
+  </li>
+  {% endunless %}
+  {% endfor %}
+{% endif %}

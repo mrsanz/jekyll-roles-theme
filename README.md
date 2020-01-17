@@ -34,6 +34,31 @@ remote_theme: mrsanz/jekyll-roles-theme
 
 ## Configure your `_config.yaml`
 
+
+***Configure the title of your site***
+
+Add a title to your site in the `_config.yaml`
+```
+title: Kubernetes Community
+```
+
+***Community Hub***
+You may want to connect your community back to a central community hub or larger affiliation.  To do this add a backlink to your sites `_config.yaml`.  This will show up in the top nav of your site. Use a command and space as divider between the title and url.
+
+```yaml
+backlink: Community Meetings, https://confluence.com/community-space
+```
+
+Additionally there may be related communities that you want to make folks aware of as they depend upon or co-labor with your project.  To include links to these communities pages add them with the related_communities configuration.
+
+```yaml
+related_communties:
+  "AWS Containers": https://pages.github.com/aws-containers-community
+  "Docker": https://www.docker.com
+```
+
+***Setup links***
+
 Setup links to relevant documentation in your `_config.yaml`.  These links are then available globally.  This generates a list of markdown [reference links](https://daringfireball.net/projects/markdown/syntax#link) in each page of your site.  
 
 ```yaml

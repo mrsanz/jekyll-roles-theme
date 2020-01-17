@@ -1,13 +1,18 @@
 <nav class="navbar navbar-dark w-100" >
-  <a href="{{ site.url }}" class="navbar-brand nav-item text-light">{% include title.html %}</a>
-  <div class="nav">
-    {% for role in site.roles %}
-    {% unless site.data.config.excludes contains role.title %}
-    <a class="nav-item nav-link text-light{% if page.title == role.title %} text-muted{% endif %}" href="{{ role.url | relative_url }}">{{role.title}}</a>
-    {% endunless %}
-    {% endfor %}
-    {% if site.reference != nil and site.referenceName != nil %}
-    <a href="{{site.reference}}" class="btn btn-outline-light nav-item nav-link" target="_blank">{{site.referenceName"}}</a>
+
+  {% if site.backlink != nil %}
+    {% assign backlink = site.backlink | split: ", " %}
+    <a href="{{ backlink[1] }}" class="navbar-brand nav-item text-light" target="_blank">{{ backlink[0] }} </a>
+  {% else %}
+    <a href="{{ site.url }}{{ site.baseurl }}" class="navbar-brand nav-item text-light">{% include title.html %}</a>
+  {% endif %}
+
+  <div class="nav justify-content-end">
+    {% if site.backlink != nil %}
+    <li class="nav-item">
+      <a href="{{ site.url }}{{ site.baseurl }}" class="nav-item nav-link text-light active">{% include title.html %}</a>
+    </li>
     {% endif %}
+    {% include related_communties.html %}
   </div>
 </nav>
