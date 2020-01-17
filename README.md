@@ -1,45 +1,78 @@
 # jekyll-roles-theme
 
-Welcome to the Community Roles jekyll-theme.  This theme is designed to host and share community processes and roles as a set of GitHub Pages.
+Welcome to the Jekyll Community Roles theme.  This theme is designed to host and share community processes, roles and important links as a set of GitHub Pages.  Since building up a small community is integral to any InnerSource effort, this is a great starting point for InnerSource projects as well.
 
 ## Notable Features
 
-* Pre-defined Roles. Create an empty page in your site with the same name as the role and it will be pre-populated with the corresponding [role templates](_includes/default_roles).
-* Pre-defined template content in [`/roles`](/roles)
-* Landing page to easily display information about your community and view all of the roles that your community uses.
-* You can overwrite default roles with the overwrite front-matter flag.
+* Clean landing page, to display important information, roles and general purpose information about your community.
+* Pre-defined roles / templated content in [`/roles`](/roles)
+* Fully customizable roles!  Just add your own content to the bottom or override the default role content.
+* Add your own roles utilizing the [generic template](/roles/generic_template.md). 
+* Global links!
 
-## Installation
+## Generate a blank Github Pages site
 
-replace the `theme` with this line in your Jekyll site's `_config.yml`:
+Follow [these instructions](newsite.md) to generate a new Jekyll GitHub pages site.  The remainder of the instructions in this document are focused on ensuring the theme works well for you.
+
+# Theme Installation
+
+Installing the theme consists of a few parts
+
+1. Replace the default theme.
+1. Configure your `_config.yaml`.
+1. Add a homepage summary.
+1. Copy over any of the default roles.
+1. Update `front-matter` options for roles.
+
+## Replace the default theme
+
+Replace the `theme` with this line in your Jekyll site's `_config.yml`:
 
 ```yaml
 remote_theme: mrsanz/jekyll-roles-theme
 ```
 
-Configure any relevant `_config.yaml` settings.  The full set of options are below
+## Configure your `_config.yaml`
+
+Setup links to relevant documentation in your `_config.yaml`.  These links are then available globally.  This generates a list of markdown [reference links](https://daringfireball.net/projects/markdown/syntax#link) in each page of your site.  
 
 ```yaml
-# links will show up as reference links on each page, new and included roles
+# links will show up as reference links on each role page
 links:
-  chat: https://slack.com/
-  organizers: https://slack.com/
+  # Chat is a link to the main chat room for your community
+  chat: https://slack.com/<link-to-channel>
+  # Organizers is a link to a chat room for anyone that wants to help organize a community. (optional)
+  organizers: https://slack.com/<link-to-organizers-channel>
+  # Folder is where any agendas or notes lives, typically these live on Google Drive or Microsoft OneDrive, but they could be a GitHub wiki.
   folder: https://drive.google.com/drive/folders/
+  # Calendar is a link to a shared calendar showing upcoming invitations.
   calendar: https://calendar.google.com/calendar?hash
 ```
 
-Modify your `index.md` in the root of your theme to customize your home page with any message you want to be front and center to your community.
+If for some reason your links show without a link e.g. ([chat]) simply add the following to the end of your markdown.
+```
+{% include links.md %}
+```
+
+## Add a homepage summary.
+
+Modify your `index.md` in the root of your theme to customize your home page with any message you want to be front and center for your community.
 ``` md
 ---
 layout: home
 ---
-Welcome to our community.
+## Welcome to our community.  
+
 Join our community slack channel [#community-slack][chat]
+
 Join our organizers slack channel [#community-slack-organizers][organizers]
+
+Check out our documentation [folder]
 {% include links.md %}
 ```
 
-## Add your roles
+## Copy over any of the default roles
+
 Copy over any role templates [`/roles`](/roles) you wish to adopt.  Add any new roles you wish with the following front matter.  Use the [`roles/generic_template.md`](roles/generic_template.md) as a template for new roles.
 
 ```yaml
@@ -51,33 +84,43 @@ description: <short description>
 ---
 ```
 
-***overwrite default content***
+## Update `front-matter` options for roles.
 
-To fully customize a role add the following `front-matter` to your role.
+Update time durations and descriptions to meet your own community needs.  Documenting precise times will enable folks to more easily sign up for roles.  
+
+There are a few custom options for specific roles to consider.
+
+- Scheduler Role
+  Some groups use google or one drive to manage their calendars for scheduling.  Include google or one drive specific instructions with the following option.
+``` yaml
+reference: google
+# reference: onedrive
+```
+
+- Facilitator Role
+  Some groups will review a backlog as a part of their facilitator's agenda.  Include project_board specific instructions with the following option.
+```yaml
+project_board: true
+``` 
+
+***Overwrite default role content***
+
+Say you want to have a facilitator role but want to define it yourself  add the following option to your roles `front-matter`.
 ```md
 # role/facilitator.md
 overwrite: true
 ```
 
-This will allow your markdown in that page to fully overwrite any role default content.  By removing the default content it also removes the default include of links so add this to the bottom of your overwritten role to ensure global links still work.
-```md
+This will allow your markdown in that page to fully overwrite any role default content.  If you do override content you'll need to re-add the global links with this snippet.
+```
 {% include links.md %}
 ```
 
-***Custom config for the Scheduler Role***
-
-The following reference key is required for the `scheduler` role. Valid options are: `google`, `onedrive`
-``` yaml
-# _config.yaml
-reference: google
-# reference: onedrive
-```
-
-## Contributing
+# Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mrsanz/jekyll-roles-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-## License
+# License
 
 The theme is available as open source under the terms of the [ISC License](https://opensource.org/licenses/ISC).
 

@@ -19,9 +19,9 @@ This can be used to collect information into a single place for review during th
 or linking to metrics in a spreadsheet.
 * Put the most important task to complete first in the agenda.
 
-{% if site.reference != nil %}
+{% if page.reference != nil %}
 ***To create a new shared document***
-{% capture type %}default_roles/scheduler-{{site.reference}}.md{% endcapture %}
+{% capture type %}default_roles/scheduler-{{page.reference}}.md{% endcapture %}
 {% include {{ type }} %}
 {% endif %}
 
