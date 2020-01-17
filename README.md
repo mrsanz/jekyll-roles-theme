@@ -52,9 +52,9 @@ backlink: Community Meetings, https://confluence.com/community-space
 Additionally there may be related communities that you want to make folks aware of as they depend upon or co-labor with your project.  To include links to these communities pages add them with the related_communities configuration.
 
 ```yaml
-related_communties:
-  "AWS Containers": https://pages.github.com/aws-containers-community
-  "Docker": https://www.docker.com
+related_communities:
+  - AWS Containers, https://pages.github.com/aws-containers-community
+  - Docker, https://www.docker.com
 ```
 
 ***Setup links***
