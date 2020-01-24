@@ -5,7 +5,7 @@
  - [ ] Update the [shared calendar][calendar] series with any new attendees.
  - [ ] Visit the [shared document folder][folder].
  - [ ] Right-click on the `2020 - MM - DD` file.
- - [ ] Select {% if page.reference == 'onedrive' %}`Copy to`.  Set the current folder as the target location and click `Copy here`{% else %}`Make a copy`{% endif %}.
+ - [ ] Select {% if page.reference == 'onedrive' %}`Copy to`.  Set the current folder as the target destination and click `Copy here`{% else %}`Make a copy`{% endif %}.
  - [ ] Replace `MM` and `DD` in the document name with the two-digit month and day of the upcoming meeting.
  - [ ] Open the document and follow the steps in the ***Do these things to set up this document section***.
  - [ ] Update the [calendar invite][calendar] for the next meeting to add:
