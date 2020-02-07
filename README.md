@@ -121,6 +121,12 @@ There are a few custom options for specific roles to consider.
 reference: google
 # reference: onedrive
 ```
+  Some groups have an infinite calendar series while others schedule just one calendar instance at a time.
+  Specify your scheduling preference with the `invite_type` option.
+``` yaml
+invite_type: series
+# invite_type: instance
+```
 
 - Facilitator Role
   Some groups will review a backlog as a part of their facilitator's agenda.  Include project_board specific instructions with the following option.
