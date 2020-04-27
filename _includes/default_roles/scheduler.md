@@ -1,6 +1,6 @@
 ## Tasks
 
-***Within 24 Hours of Meeting***
+***Within 24 Hours of Prior Meeting***
 
 {% if page.invite_type == "series" %}- [ ] Update the [shared calendar][calendar] series with any new attendees.{% endif %}
  - [ ] Visit the [shared document folder][folder].
@@ -18,7 +18,7 @@ Be sure to include in the invite body:{% endcase %}
    * Copy/pasted role assignments and agenda detail.
 
 {% if page.reference != nil %}
-***To create a new shared document***
+***Tips***
 {% capture type %}default_roles/scheduler-{{page.reference}}.md{% endcapture %}
 {% include {{ type }} %}
 {% endif %}
