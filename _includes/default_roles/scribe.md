@@ -2,8 +2,9 @@
 
 ***During Meeting***
 
-- [ ] Encourage everyone present to open up a shared document and type directly into it.
-- [ ] Watch your shared document closely to ensure that all sections are completely filled out.  Type in anything that is missed.
+- [ ] Encourage everyone present to open up the agenda document and type notes directly into it.
+- [ ] Watch your shared document closely to ensure that all sections are completely filled out.
+Type in anything that is missed.
 
 ***Within 24 Hours of Meeting***
 
