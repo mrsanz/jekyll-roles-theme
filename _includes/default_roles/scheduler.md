@@ -17,13 +17,6 @@ Be sure to include in the invite body:{% endcase %}
    * Write-enabled link to the agenda document.
    * Copy/pasted role assignments and agenda detail.
 
-
-***Tips***
-* Create a short todo list of instructions in the agenda template.  
-This can be used to collect information into a single place for review during the meeting, 
-or linking to metrics in a spreadsheet.
-* Put the most important task to complete first in the agenda.
-
 {% if page.reference != nil %}
 ***To create a new shared document***
 {% capture type %}default_roles/scheduler-{{page.reference}}.md{% endcapture %}
