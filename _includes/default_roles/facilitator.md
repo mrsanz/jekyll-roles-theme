@@ -10,14 +10,13 @@
 ***Tips***
 
 * Host the meeting by keeping the agenda open and share your screen with the people on the call.
-* Asking up front what folks want to get out of the meeting, updating the agenda to meet everyones needs.
-* Guide the group each agenda item from top to bottom.
-* Before discussing each item, briefly remind people of what it is so that they're up to speed and can contribute to the conversation).
+* Ask up front what folks want to get out of the meeting.
+Ensure the agenda to meet everyone's needs.
 * The purpose of reviewing each agenda item is to generate actionable, assigned next steps. Accordingly:
   * Guide the conversation towards understanding what is blocking the item's progression and what can be done to advance it.
-  * Strive for each task to be assigned to a volunteer on the call.
+  * Strive for each task to be assigned to a volunteer in the meeting.
   * When all such tasks have been assigned, move on to the next agenda item.
-* At the close of the call thank everyone for participating.
+* At the close of the meeting thank everyone for participating.
 
 {% if page.project_board == true %}
 ***When reviewing a project board***
