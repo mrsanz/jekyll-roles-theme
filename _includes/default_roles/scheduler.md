@@ -15,7 +15,7 @@
 Set the time and place to the next meetup.
 Be sure to include in the invite body:{% endcase %}
    * Write-enabled link to the agenda document.
-   * Copy/pasted role assignments and agenda detail.
+   * Role assignment and agenda detail summary.
 
 {% if page.reference != nil %}
 ***Tips***
