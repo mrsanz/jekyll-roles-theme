@@ -33,10 +33,14 @@
         {% capture role_docs%}{% include default_roles/scheduler.md %}{% endcapture %}
         {{ role_docs | markdownify }}
       {% endif %}
-      {% if title == 'scribe' %}
-      {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
-      {{ role_docs | markdownify }}
+      {% if title == 'timekeeper' %}
+        {% capture role_docs%}{% include default_roles/timekeeper.md %}{% endcapture %}
+        {{ role_docs | markdownify }}
       {% endif %}
+      {% if title == 'scribe' %}
+        {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
+        {{ role_docs | markdownify }}
+      {% endif %}        
       {% endunless %}
       {{ content }}
       </div>
