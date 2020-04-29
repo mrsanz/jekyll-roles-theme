@@ -1,35 +1,24 @@
 ## Tasks
 
-***Within 24 Hours of Meeting***
+***Within 24 Hours of Prior Meeting***
 
-{% if page.invite_type == "series" %}
- - [ ] Update the [shared calendar][calendar] series with any new attendees.
-{% endif %}
+{% if page.invite_type == "series" %}- [ ] Update the [shared calendar][calendar] series with any new attendees.{% endif %}
  - [ ] Visit the [shared document folder][folder].
  - [ ] Right-click on the `2020 - MM - DD` file.
  - [ ] Select {% if page.reference == 'onedrive' %}`Copy to`.  Set the current folder as the target destination and click `Copy here`{% else %}`Make a copy`{% endif %}.
  - [ ] Replace `MM` and `DD` in the document name with the two-digit month and day of the upcoming meeting.
  - [ ] Open the document and follow the steps in the ***Do these things to set up this document section***.
-{% case page.invite_type %}
-{% when "series" %}
+{% case page.invite_type %}{% when "series" %}
  - [ ] Update the [calendar invite][calendar] for the next meeting to add:
 {% when "instance" %}
  - [ ] Reply-by-meeting to the notes from the previous meeting.
 Set the time and place to the next meetup.
-Be sure to include in the invite body:
-{% endcase %}
+Be sure to include in the invite body:{% endcase %}
    * Write-enabled link to the agenda document.
-   * Copy/pasted role assignments and agenda detail.
-
-
-***Tips***
-* Create a short todo list of instructions in the agenda template.  
-This can be used to collect information into a single place for review during the meeting, 
-or linking to metrics in a spreadsheet.
-* Put the most important task to complete first in the agenda.
+   * Role assignment and agenda detail summary.
 
 {% if page.reference != nil %}
-***To create a new shared document***
+***Tips***
 {% capture type %}default_roles/scheduler-{{page.reference}}.md{% endcapture %}
 {% include {{ type }} %}
 {% endif %}
