@@ -14,6 +14,7 @@
 Ensure the agenda to meet everyone's needs.
 * The purpose of reviewing each agenda item is to generate actionable, assigned next steps. Accordingly:
   * Guide the conversation towards understanding what is blocking the item's progression and what can be done to advance it.
+  * Consensus is not always necessary - sometimes a "disagree and commit" approach is needed to move things forward.
   * Strive for each task to be assigned to a volunteer in the meeting.
   * When all such tasks have been assigned, move on to the next agenda item.
 * At the close of the meeting thank everyone for participating.
