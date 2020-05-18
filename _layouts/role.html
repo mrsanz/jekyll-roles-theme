@@ -24,27 +24,9 @@
     <section class="bg-white">
       <div class="container">
       {% unless page.overwrite == true %}
-      {% assign title = page.title | downcase %}
-      {% if title == 'facilitator' %}
-        {% capture role_docs%}{% include default_roles/facilitator.md %}{% endcapture %}
-        {{ role_docs | markdownify }}
-      {% endif %}
-      {% if title == 'scheduler' %}
-        {% capture role_docs%}{% include default_roles/scheduler.md %}{% endcapture %}
-        {{ role_docs | markdownify }}
-      {% endif %}
-      {% if title == 'timekeeper' %}
-        {% capture role_docs%}{% include default_roles/timekeeper.md %}{% endcapture %}
-        {{ role_docs | markdownify }}
-      {% endif %}
-      {% if title == 'reporter' %}
+        {% assign title = page.title | downcase %}
         {% capture role_docs%}{% include default_roles/{{title}}.md %}{% endcapture %}
         {{ role_docs | markdownify }}
-      {% endif %}
-      {% if title == 'scribe' %}
-        {% capture role_docs%}{% include default_roles/scribe.md %}{% endcapture %}
-        {{ role_docs | markdownify }}
-      {% endif %}        
       {% endunless %}
       {{ content }}
       </div>
