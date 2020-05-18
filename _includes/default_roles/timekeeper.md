@@ -15,5 +15,6 @@ then remind the group that the time has past and encourage them to finish.
 
 * Be clear, but kind.
 The group should feel that you are genuinely trying to help (rather than scold) them.
+* When time is nearing completion, you may give a nonverbal signal, such as fingers raised, indicating the number of minutes that are remaining.
 
 {% include links.md %}
