@@ -6,7 +6,7 @@
 
 {% if page.metrics_instructions != nil %}
 ***Tips***
-* See these [detailed instructions][metrics_instructions]
+* See these [detailed instructions][metrics_instructions].
 {% endif %}
 
 {% include links.md %}
