@@ -72,6 +72,8 @@ links:
   folder: https://drive.google.com/drive/folders/
   # Calendar is a link to a shared calendar showing upcoming invitations.
   calendar: https://calendar.google.com/calendar?hash
+  # Location of the document containing regular metrics for the effort.
+  metrics_document: https://docs.google.com/...
 ```
 
 If for some reason your links show without a link e.g. ([chat]) simply add the following to the end of your markdown.
