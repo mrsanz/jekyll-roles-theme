@@ -9,7 +9,7 @@
  - [ ] Replace `MM` and `DD` in the document name with the two-digit month and day of the upcoming meeting.
  - [ ] Open the document and follow the steps in the ***Do these things to set up this document section***.
 {% case page.invite_type %}{% when "series" %}
- - [ ] Update the [calendar invite][calendar] for the next meeting to add:
+ - [ ] Update the [calendar invite](https://github.com/InnerSourceCommons/foundation-governance/blob/319e6f9bea0de12e93aa418b1a4b0564ebaa59f4/how-to/access-isc-calendar.md) for the next meeting to add:
 {% when "instance" %}
  - [ ] Reply-by-meeting to the notes from the previous meeting.
 Set the time and place to the next meetup.
