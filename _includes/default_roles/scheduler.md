@@ -1,3 +1,5 @@
+The _Scheduler_ prepares the agenda document and sends the calendar invite for the meeting.
+
 ## Tasks
 
 ***Within 24 Hours of Prior Meeting***
