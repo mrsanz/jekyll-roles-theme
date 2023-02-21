@@ -40,7 +40,6 @@
           {% for p in site.pages %}
           {% if p.layout == "role" %}
           
-          {% assign time = p.time %}
           {% assign description = p.description %}
 
           <div class="col-sm-4">
@@ -48,8 +47,6 @@
               <div class="card-body text-left">
                 <p class="card-title">
                   <a class="stretched-link" href="{{ p.url | relative_url }}">{{ p.title }}</a><br/>
-                  
-                  <small class="text-muted">Time: {{ time }}</small>
                 </p>
                 <p>
                   {{ description }}
