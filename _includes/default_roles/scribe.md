@@ -1,16 +1,18 @@
+The _Scribe_ ensures that meeting notes are taken and sends them out.
+
 ## Tasks
 
 ***During Meeting***
 
-- [ ] Encourage everyone present to open up the agenda document and type notes directly into it.
-- [ ] Watch your shared document closely to ensure that all sections are completely filled out.
-Type in anything that is missed.
+* [ ] Note the first names of each meeting attendee.
+* [ ] Record a simple, short summary of each discussion in the **Key Points** section.
+* [ ] Record all assignments in the **Assignments** section.
 
 ***Within 24 Hours of Meeting***
 
-Part of your service as _Scribe_ is to summarize the key points of what was said enabling recipients to recall or learn the main points of the discussion.  These steps ensure this happens.
+Part of your service as _Scribe_ is to summarize the key points of what was said enabling recipients to recall or learn the main points of the discussion.
 
-- [ ] Clean up everyone's notes plus your own into a cohesive record of the meeting. (see tip)
+- [ ] Clean up the notes into a cohesive record of the meeting.
 - [ ] Announce in [chat]{:target="_blank"} that the notes are in the agenda document.
 In your announcement include a sharing link to the document itself.
 - [ ] Reply-all to the meeting invite with the notes from the meeting.
