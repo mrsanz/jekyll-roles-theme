@@ -1,0 +1,20 @@
+title: "Name of Your Working Group"
+description: "Description of Your Working Group"
+
+# The name only of your repo exactly.
+baseurl: "repo-name" 
+
+# This should stay as "https://innersourcecommons.github.io/"
+url: "https://innersourcecommons.github.io/"
+
+links:
+  # The web URL to your Slack channel.
+  # You can find it by logging in at https://innersourcecommons.slack.com/, navigating to your channel, and copying the URL.
+  chat:
+  
+  # The web URL to the folder that has your meeting agendas.
+  # This is somewhere in the InnerSource Commons Google Drive (https://drive.google.com/drive/folders/0B2FGN9Kd_fgSMDhJU1Nna0Njbm8).
+  folder: 
+
+# This should stay as InnerSourceCommons/working-group-roles
+remote_theme: InnerSourceCommons/working-group-roles
