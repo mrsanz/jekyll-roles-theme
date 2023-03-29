@@ -1,6 +1,6 @@
 The _Crier_ reminds people in _Slack_ of the upcoming meeting.
 
-**About 24 Hours Before Meeting**
+**1 Business Day Before Meeting**
 
 * [ ] Announce the meeting in our [Slack][chat]{:target="_blank"}.
 * [ ] Use the `Share` arrow icon to share that announcement with the [#general] channel.
