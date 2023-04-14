@@ -9,7 +9,7 @@ A _Crier_ reminds us in Slack of upcoming meetings.
 
 **Behaviors**
 
-* When possible, move action items a team backlog.  
+* When possible, move action items into a team backlog.  
 * Recruit external members.
   * Present to the InnerSource community.
   * Invite your friends!
