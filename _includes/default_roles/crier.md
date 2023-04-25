@@ -10,7 +10,6 @@ A _Crier_ reminds us in Slack of upcoming meetings.
 **Behaviors**
 
 * Recruit external members.
-  * Present to the InnerSource community.
   * Invite your friends!
 
 **Tips**
