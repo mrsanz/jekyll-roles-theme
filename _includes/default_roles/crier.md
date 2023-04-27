@@ -14,7 +14,7 @@ A _Crier_ reminds us in Slack of upcoming meetings.
 
 **Tips**
 
-*  Make the announcement clear enough for those without a calendar invite.
+* Make the announcement clear enough for those without a calendar invite.
      - Meeting day/time
      - Call info
 * An excellent way to keep participants and non-participants intrigued is to include interesting agenda items from the calendar invite in the announcement. 
