@@ -30,6 +30,7 @@ Your roles documentation site should be live at https://innersourcecommons.githu
 
 * Prefer asterisk formatting of lists rather than hyphen formatting.
 See [this discussion](https://nickang.com/2018-03-05-markdown-bullet-points-hyphen-asterisk/).
-* Write each new sentence on a new line. GitHub allows leaving comments on a line-by-line basis.
+* Write each new sentence on a new line.
+GitHub allows leaving comments on a line-by-line basis.
 Review and comment on the content of submitted text is much easier if there are multiple lines on-which to leave comments.
 Sentences on consecutive lines will be collapsed into a single paragraph (like this one) in the final rendering of the content.
