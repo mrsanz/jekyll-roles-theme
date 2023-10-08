@@ -9,11 +9,9 @@ The _Facilitator_ conducts the meeting so that all of the agenda items are finis
 ***During the meeting***
 - [ ]  Facilitate the meeting according to following Tips below.
 
-{% if page.attendance != nil %}
 ***After the meeting***
 * Update the [attendance]({{page.attendance}}) to mark those present at the meeting.
 * Reach out to anyone that has not attended the last 3 meetings or more.
-{% endif %}
 
 ***Tips***
 
